@@ -1,0 +1,133 @@
+.account-dashboard {
+  margin-top: 5rem;
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.transaction-history {
+  position: relative;
+  flex: 1;
+  max-height: 100%;
+  overflow-y: auto;
+  border: 1px solid #333;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.transaction-list {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 70px;
+}
+
+.transaction-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #444;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.withdraw {
+  background-color: red;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  padding: 0 1rem;
+}
+.deposit {
+  background-color: green;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  padding: 0 1rem;
+}
+
+.bottom-boxes {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #333;
+  padding: 0.5rem;
+  border-top: 1px solid #555;
+}
+
+.tx-data-box {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.account-actions {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.account-actions__section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.account-actions__section h3 {
+  margin-bottom: 0.75rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.account-actions__group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-actions__group label {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight: 500;
+}
+
+.account-actions__group input {
+  padding: 0.5rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.account-actions__section button {
+  align-self: flex-start;
+  background-color: #2f80ed;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
