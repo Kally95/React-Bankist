@@ -19,7 +19,7 @@ export default function AccountActions() {
     const amount = +fd.get("amount");
 
     const accountExists = state.accounts.some(
-      (account) => account.owner === payee
+      (account) => account.owner === payee,
     );
 
     if (accountExists && amount > 0 && currentUserBalance - amount > 0) {

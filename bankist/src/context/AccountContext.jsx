@@ -132,7 +132,7 @@ function accountReducer(state, action) {
                   action.payload.amount * (1 + account.interestRate / 100),
                 ],
               }
-            : account
+            : account,
         ),
       };
   }
@@ -160,7 +160,7 @@ export function AccountContextProvider({ children }) {
         .currency
     ];
   const currentAccount = state.accounts.find(
-    (account) => account.id === state.currentUserId
+    (account) => account.id === state.currentUserId,
   );
   const currentAccountOwner = currentAccount.owner;
 
@@ -171,7 +171,7 @@ export function AccountContextProvider({ children }) {
 
   const currentAccountDebt = currentAccount.totalLoanDebt.reduce(
     (acc, debt) => acc + debt,
-    0
+    0,
   );
 
   return (
